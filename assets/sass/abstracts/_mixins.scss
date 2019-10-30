@@ -1,0 +1,62 @@
+@mixin box-shadow-menu{
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.4);
+}
+
+@mixin border-radius-50{
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+// Mixins FlexBox
+@mixin flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin just-end{
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+@mixin just-center{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@mixin just-space-between{
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@mixin just-space-arround{
+    -ms-flex-pack: distribute;
+    justify-content: space-around
+}
+
+@mixin align-start{
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+@mixin align-center{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+@mixin align-end{
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+@mixin flex-wrap{
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}

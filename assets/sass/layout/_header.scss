@@ -1,0 +1,13 @@
+.header{
+    @include box-shadow-menu;
+    padding: 2rem 0;
+    background-color: $branco;
+    position: fixed;
+    width: 100%;
+
+    &__wraper{
+        @include flex;
+        @include just-space-between;
+        @include align-center;
+    }
+}

@@ -1,0 +1,33 @@
+.menu{
+
+    &__lista{
+        list-style: none;
+        @include flex;
+        @include align-center;
+    }
+
+    &__item{
+
+        &:not(:last-child){
+            margin-right: 3.2rem;
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: $cinza;
+        transition: .3s ease;
+
+        &:hover{
+            color: $preto;
+        }
+
+        &-active{
+            @extend .menu__link;
+            text-decoration: underline;
+            color: $preto;
+        }
+    }
+}

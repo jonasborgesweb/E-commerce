@@ -1,7 +1,7 @@
 {
-  "name": "am4-boilerplate",
+  "name": "E-commerce",
   "version": "2.0.0",
-  "description": "AM4 Boilerplate",
+  "description": "Front E-commerce",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
