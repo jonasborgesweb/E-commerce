@@ -4,6 +4,7 @@
     background-color: $branco;
     position: fixed;
     width: 100%;
+    z-index: $z-index-menu;
 
     &__wraper{
         @include flex;

@@ -30,4 +30,29 @@
             color: $preto;
         }
     }
+
+    &-footer{
+
+        &__lista{
+            @extend .menu__lista;
+        }
+
+        &__item{
+            &:not(:last-child){
+                margin-right: 3.2rem;
+            }
+        }
+
+        &__link{
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: 300;
+            color: $preto;
+            transition: .3s ease;
+    
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
 }
