@@ -1,0 +1,47 @@
+.banner{
+    height: 65rem;
+    position: relative;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    &__content{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 700px;
+        width: 100%;
+    }
+
+    &__titulo{
+        font-size: 5rem;
+        font-weight: 900;
+        color: $preto;
+        text-transform: uppercase;
+    }
+
+    &__descricao{
+        margin: 2rem 0 6rem;
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: $preto;
+        line-height: 24px;
+    }
+
+    &__botao{
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: $preto;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        transition: .3s ease;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+
+}

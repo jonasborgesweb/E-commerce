@@ -1,0 +1,126 @@
+.produtos{
+    padding: 7rem 0 0;
+
+    &__topo{
+        @include flex;
+        @include align-center;
+        @include just-space-between;
+        margin-bottom: 5rem;
+    }
+
+    &__todos{
+
+    }
+
+    &__btn-link{
+        font-size: 1.8rem;
+        display: block;
+        font-weight: 400;
+        color: $preto;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: .3s ease;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+
+    &__content{
+
+    }
+
+    &__wraper{
+        @include flex;
+        @include flex-wrap;
+    }
+
+    &__single{
+        @include flex-31;
+        @include box-shadow-card;
+        margin-bottom: 4rem;
+        transition: .4s ease;
+
+        &:not(:nth-child(3n)){
+            margin-right: 3.5%;
+        }
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+
+    &__link{
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    &__img{
+        width: 100%;
+    }
+
+    &__bottom{
+        padding: 2rem 2rem;
+    }
+
+    &__nome{
+        font-size: 2rem;
+        font-weight: 500;
+        color: $preto;
+        margin-bottom: .5rem;
+    }
+
+    &__valor{
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: $preto;
+    }
+
+    &__error{
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: $preto;
+    }
+
+    &__embaixo{
+        @include flex;
+        @include just-space-between;
+        margin: 8rem 0;
+
+        .card-promocao{
+            @include flex-48;
+        }
+    }
+}
+
+.tabcontent {
+    animation: fadeEffect 2s; /* Fading effect takes 1 second */
+  }
+  
+
+
+.tablinks{
+    font-family: $font;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $cinza;
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    transition: .3s ease;
+
+    &:not(:last-child){
+        margin-right: 3rem;
+    }
+
+    &:hover{
+        color: $preto;
+    }
+}
+
+.tablinks.active{
+    color: $preto;
+    text-decoration: underline;
+}
