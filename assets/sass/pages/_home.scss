@@ -1,0 +1,103 @@
+.destaque{
+    margin: 15rem 0rem;
+}
+
+.noticias{
+    background-color:#EFEFEF;
+    position: relative;
+    padding: 2rem 0;
+    
+
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 259px;
+        height: 100%;
+        background-image: url('../../../images/noticias-img1.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 259px;
+        height: 100%;
+        background-image: url('../../../images/noticias-img2.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__box{
+        position: relative;
+        top: 50%;
+        margin: 6rem auto;
+        // background-color: red;
+        max-width: 540px;
+        width: 100%;
+    }
+
+    &__titulo{
+        font-size: 2.4rem;
+        font-weight: 300;
+        color: $preto;
+        text-transform: uppercase;
+        text-align: center;
+        max-width: 440px;
+        width: 100%;
+        margin: 0 auto;
+
+        span{
+            font-weight: 500;
+        }
+    }
+
+    &__descricao{
+        font-size: 1.6rem;
+        line-height: 24px;
+        font-weight: 300;
+        color: $preto;
+        text-align: center;
+        margin: 2rem auto 4rem;
+        max-width: 440px;
+        width: 100%;
+    }
+
+    &__form{
+        @include flex;
+        @include just-space-between;
+    }
+
+    &__input{
+        box-sizing: border-box;
+        max-width: 350px;
+        width: 100%;
+        padding: 1.5rem 3rem;
+        border: none;
+        outline: 0;
+        background-color: #fff;
+        font-family: $font;
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: $preto;
+
+        &::placeholder{
+            opacity: .6;
+        }
+    }
+
+    &__submit{
+        max-width: 160px;
+        width: 100%;
+        background-color: $preto;
+        color: #fff;
+        border: none;
+        outline: 0;
+    }
+}

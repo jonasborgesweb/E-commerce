@@ -37,12 +37,12 @@
 
     &__single{
         @include flex-31;
-        @include box-shadow-card;
+        border: 1px solid rgba($preto,.1);
         margin-bottom: 4rem;
         transition: .4s ease;
 
         &:not(:nth-child(3n)){
-            margin-right: 3.5%;
+            margin-right: 3.2%;
         }
 
         &:hover{
@@ -51,7 +51,8 @@
     }
 
     &__link{
-        display: inline-block;
+        color: inherit;
+        display: block;
         text-decoration: none;
     }
 
@@ -91,6 +92,48 @@
         .card-promocao{
             @include flex-48;
         }
+    }
+
+    &__box{
+        @include flex;
+        @include just-space-between;
+        @include align-center;
+    }
+
+    &__info{
+        @include flex;
+        @include align-center;
+
+        .produtos__texto{
+            &:not(:last-child){
+                margin-right: 3rem;
+            }
+        }
+    }
+
+    &__texto{
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: $preto;
+    }
+
+    &__icone{
+        margin-right: .5rem;
+        cursor: pointer;
+    }
+
+    &__cart{
+
+    }
+
+    &__button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: $preto;
+        outline: none;
     }
 }
 

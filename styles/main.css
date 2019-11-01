@@ -40,10 +40,11 @@ main {
   margin: 0 auto;
 }
 
-.page-center {
-  max-width: 1280px;
-  width: 94%;
-  margin: 0 auto;
+.linha {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 1rem 0;
 }
 
 .banner {
@@ -142,6 +143,51 @@ main {
   text-decoration: underline;
 }
 
+.preloader {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #070707;
+  z-index: 99999;
+}
+.preloader.active {
+  transform: translateY(-100vh);
+  transition: ease-in-out 2s;
+}
+.preloader:before {
+  content: 'Carregando';
+  position: absolute;
+  font-size: 10rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.03);
+}
+
+.counter {
+  position: relative;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 600;
+  z-index: 1;
+}
+.counter::after {
+  content: '%';
+  font-size: 2rem;
+}
+
+.hide {
+  opacity: 0;
+  transition: 1s;
+  pointer-events: none;
+}
+
 .produtos {
   padding: 7rem 0 0;
 }
@@ -175,18 +221,19 @@ main {
 .produtos__single {
   -ms-flex: 0 0  31%;
   flex: 0 0  31%;
-  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(34, 34, 34, 0.1);
   margin-bottom: 4rem;
   transition: .4s ease;
 }
 .produtos__single:not(:nth-child(3n)) {
-  margin-right: 3.5%;
+  margin-right: 3.2%;
 }
 .produtos__single:hover {
   transform: scale(1.05);
 }
 .produtos__link {
-  display: inline-block;
+  color: inherit;
+  display: block;
   text-decoration: none;
 }
 .produtos__img {
@@ -222,6 +269,41 @@ main {
 .produtos__embaixo .card-promocao {
   -ms-flex: 0 0  48%;
   flex: 0 0  48%;
+}
+.produtos__box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.produtos__info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.produtos__info .produtos__texto:not(:last-child) {
+  margin-right: 3rem;
+}
+.produtos__texto {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #222;
+}
+.produtos__icone {
+  margin-right: .5rem;
+  cursor: pointer;
+}
+.produtos__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #222;
+  outline: none;
 }
 
 .tabcontent {
@@ -455,4 +537,101 @@ main {
   font-size: 1.6rem;
   font-weight: 300;
   color: #222;
+}
+
+.destaque {
+  margin: 15rem 0rem;
+}
+
+.noticias {
+  background-color: #EFEFEF;
+  position: relative;
+  padding: 2rem 0;
+}
+.noticias:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 259px;
+  height: 100%;
+  background-image: url("../../../images/noticias-img1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.noticias:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 259px;
+  height: 100%;
+  background-image: url("../../../images/noticias-img2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.noticias__box {
+  position: relative;
+  top: 50%;
+  margin: 6rem auto;
+  max-width: 540px;
+  width: 100%;
+}
+.noticias__titulo {
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #222;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.noticias__titulo span {
+  font-weight: 500;
+}
+.noticias__descricao {
+  font-size: 1.6rem;
+  line-height: 24px;
+  font-weight: 300;
+  color: #222;
+  text-align: center;
+  margin: 2rem auto 4rem;
+  max-width: 440px;
+  width: 100%;
+}
+.noticias__form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.noticias__input {
+  box-sizing: border-box;
+  max-width: 350px;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  border: none;
+  outline: 0;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #222;
+}
+.noticias__input:-ms-input-placeholder {
+  opacity: .6;
+}
+.noticias__input::placeholder {
+  opacity: .6;
+}
+.noticias__submit {
+  max-width: 160px;
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  outline: 0;
 }
