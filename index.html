@@ -1,0 +1,809 @@
+<!doctype html>
+<html xml:lang="pt-br" lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Jonas Borges" />
+	<meta name="description" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="styles/slick.css">
+	<link rel="stylesheet" href="styles/all.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="styles/minify/main.min.css">
+	<title>Home - E-commerce</title>
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="counter">0</div>
+    </div>
+
+    <header class="header">
+        <div class="center">
+            <div class="header__wraper">
+                <div class="logo">
+                    <a href="home.html" class="logo__link">
+                        <img src="../images/logomarca.png" alt="Logomarca" class="logo__img">
+                    </a>
+                </div>
+
+                <nav class="menu">
+                    <ul class="menu__lista">
+                        <li class="menu__item">
+                            <a href="home.html" class="menu__link-active">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="home.html" class="menu__link">Produtos</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="home.html" class="menu__link">Blog</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="home.html" class="menu__link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="rede-sociais">
+                    <ul class="rede-sociais__lista">
+                        <li class="rede-sociais__item">
+                            <a href="" class="rede-sociais__link">
+                                <i class="rede-sociais__icone fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="rede-sociais__item">
+                            <a href="" class="rede-sociais__link">
+                                <i class="rede-sociais__icone fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="rede-sociais__item">
+                            <a href="" class="rede-sociais__link">
+                                <i class="rede-sociais__icone fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="rede-sociais__item">
+                            <a href="" class="rede-sociais__link">
+                                <i class="rede-sociais__icone fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="banner" style="background-image: url(../images/bg-banner.png);">
+            <div class="center">
+                <div class="banner__content">
+                    <h1 class="banner__titulo">Sale Off! Up to 70%</h1>
+                    <p class="banner__descricao">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type 
+                        specimen book.
+                    </p>
+                    <a href="" class="banner__botao">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="produtos">
+            <div class="center">
+                <h2 class="titulo-principal">Tendências</h2>
+                <div class="produtos__topo">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'T-shirt')" id="defaultOpen"><span>T-Shirt</span></button>
+                        <button class="tablinks" onclick="openCity(event, 'Pants')"><span>Pants</span></button>
+                        <button class="tablinks" onclick="openCity(event, 'Shoe')"><span>Shoe</span></button>
+                        <button class="tablinks" onclick="openCity(event, 'Jacket')"><span>Jacket</span></button>
+                        <button class="tablinks" onclick="openCity(event, 'Fashion')"><span>Fashion</span></button>
+                    </div>
+                    <div class="produtos__todos">
+                        <a href="" class="produtos__btn-link">All Products</a>
+                    </div>
+                </div>
+                <div class="produtos__content">
+                    <div id="T-shirt" class="tabcontent">
+                        <div class="produtos__wraper">
+                            <div class="produtos__single">
+                                <a href="" class="produtos__link">
+                                    <img src="../images/produto1.png" alt="Produto 1" class="produtos__img">
+                                    <div class="produtos__bottom">
+                                        <h3 class="produtos__nome">Cuffed Beanie</h3>
+                                        <p class="produtos__valor">$10.00</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="produtos__single">
+                                <a href="" class="produtos__link">
+                                    <img src="../images/produto2.png" alt="Produto 2" class="produtos__img">
+                                    <div class="produtos__bottom">
+                                        <h3 class="produtos__nome">Grey Beanie</h3>
+                                        <p class="produtos__valor">$15.00</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="produtos__single">
+                                <a href="" class="produtos__link">
+                                    <img src="../images/produto3.png" alt="Produto 3" class="produtos__img">
+                                    <div class="produtos__bottom">
+                                        <h3 class="produtos__nome">Calvin Klein Sweatpants</h3>
+                                        <p class="produtos__valor">$36.00</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="produtos__single">
+                                <a href="" class="produtos__link">
+                                    <img src="../images/produto4.png" alt="Produto 4" class="produtos__img">
+                                    <div class="produtos__bottom">
+                                        <h3 class="produtos__nome">Pink Leather Watch</h3>
+                                        <p class="produtos__valor">$36.00</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Pants" class="tabcontent">
+                        <div class="produtos__wraper">
+                            <div class="produtos__single">
+                                <a href="" class="produtos__link">
+                                    <img src="../images/produto4.png" alt="Produto 4" class="produtos__img">
+                                    <div class="produtos__bottom">
+                                        <h3 class="produtos__nome">Cuffed Beanie</h3>
+                                        <p class="produtos__valor">$10.00</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="produtos__single">
+                                <a href="" class="produtos__link">
+                                    <img src="../images/produto3.png" alt="Produto 3" class="produtos__img">
+                                    <div class="produtos__bottom">
+                                        <h3 class="produtos__nome">Grey Beanie</h3>
+                                        <p class="produtos__valor">$15.00</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="produtos__single">
+                                <a href="" class="produtos__link">
+                                    <img src="../images/produto2.png" alt="Produto 2" class="produtos__img">
+                                    <div class="produtos__bottom">
+                                        <h3 class="produtos__nome">Calvin Klein Sweatpants</h3>
+                                        <p class="produtos__valor">$36.00</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="produtos__single">
+                                <a href="" class="produtos__link">
+                                    <img src="../images/produto1.png" alt="Produto 1" class="produtos__img">
+                                    <div class="produtos__bottom">
+                                        <h3 class="produtos__nome">Pink Leather Watch</h3>
+                                        <p class="produtos__valor">$36.00</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Shoe" class="tabcontent">
+                        <div class="produtos__wraper">
+                            <div class="produtos__single">
+                                <a href="" class="produtos__link">
+                                    <img src="../images/produto1.png" alt="Produto 1" class="produtos__img">
+                                    <div class="produtos__bottom">
+                                        <h3 class="produtos__nome">Cuffed Beanie</h3>
+                                        <p class="produtos__valor">$10.00</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="produtos__single">
+                                <a href="" class="produtos__link">
+                                    <img src="../images/produto2.png" alt="Produto 2" class="produtos__img">
+                                    <div class="produtos__bottom">
+                                        <h3 class="produtos__nome">Grey Beanie</h3>
+                                        <p class="produtos__valor">$15.00</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="produtos__single">
+                                <a href="" class="produtos__link">
+                                    <img src="../images/produto3.png" alt="Produto 3" class="produtos__img">
+                                    <div class="produtos__bottom">
+                                        <h3 class="produtos__nome">Calvin Klein Sweatpants</h3>
+                                        <p class="produtos__valor">$36.00</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Jacket" class="tabcontent">
+                        <p class="produtos__error">
+                            Nenhum produto encontrado
+                        </p>
+                    </div>
+                    <div id="Fashion" class="tabcontent">
+                        <p class="produtos__error">
+                            Nenhum produto encontrado
+                        </p>
+                    </div>
+                </div>
+
+                <div class="produtos__embaixo">
+                    <div class="card-promocao">
+                        <a href="" class="card-promocao__link">
+                            <img src="../images/card1.png" alt="Card 1" class="card-promocao__img">
+                        </a>
+                    </div>
+                    <div class="card-promocao">
+                        <a href="" class="card-promocao__link">
+                            <img src="../images/card2.png" alt="Card 2" class="card-promocao__img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="destaque">
+            <div class="center">
+                <h2 class="titulo-principal">Itens em Destaque</h2>
+                <div class="produtos__wraper">
+                    <div class="produtos__single">
+                        <a href="" class="produtos__link">
+                            <img src="../images/destaque1.png" alt="Produto 1" class="produtos__img">
+                        </a>
+                        <div class="produtos__bottom">
+                            <h3 class="produtos__nome">
+                                <a href="" class="produtos__link">Cuffed Beanie</a>
+                            </h3>
+                            <p class="produtos__valor">$10.00</p>
+                            <div class="linha"></div>
+                            <div class="produtos__box">
+                                <div class="produtos__info">
+                                    <p class="produtos__texto">
+                                        <i class="produtos__icone far fa-thumbs-up"></i>
+                                        1250
+                                    </p>
+                                    <p class="produtos__texto">
+                                        <i class="produtos__icone fas fa-tags"></i>
+                                        100
+                                    </p>
+                                </div>
+                                <div class="produtos__cart">
+                                    <button class="produtos__button">
+                                        <i class="produtos__icone fas fa-shopping-cart"></i>
+                                        Add cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produtos__single">
+                        <a href="" class="produtos__link">
+                            <img src="../images/destaque2.png" alt="Produto 1" class="produtos__img">
+                        </a>
+                        <div class="produtos__bottom">
+                            <h3 class="produtos__nome">
+                                <a href="" class="produtos__link">Cuffed Beanie</a>
+                            </h3>
+                            <p class="produtos__valor">$10.00</p>
+                            <div class="linha"></div>
+                            <div class="produtos__box">
+                                <div class="produtos__info">
+                                    <p class="produtos__texto">
+                                        <i class="produtos__icone far fa-thumbs-up"></i>
+                                        1250
+                                    </p>
+                                    <p class="produtos__texto">
+                                        <i class="produtos__icone fas fa-tags"></i>
+                                        100
+                                    </p>
+                                </div>
+                                <div class="produtos__cart">
+                                    <button class="produtos__button">
+                                        <i class="produtos__icone fas fa-shopping-cart"></i>
+                                        Add cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produtos__single">
+                        <a href="" class="produtos__link">
+                            <img src="../images/destaque3.png" alt="Produto 1" class="produtos__img">
+                        </a>
+                        <div class="produtos__bottom">
+                            <h3 class="produtos__nome">
+                                <a href="" class="produtos__link">Cuffed Beanie</a>
+                            </h3>
+                            <p class="produtos__valor">$10.00</p>
+                            <div class="linha"></div>
+                            <div class="produtos__box">
+                                <div class="produtos__info">
+                                    <p class="produtos__texto">
+                                        <i class="produtos__icone far fa-thumbs-up"></i>
+                                        1250
+                                    </p>
+                                    <p class="produtos__texto">
+                                        <i class="produtos__icone fas fa-tags"></i>
+                                        100
+                                    </p>
+                                </div>
+                                <div class="produtos__cart">
+                                    <button class="produtos__button">
+                                        <i class="produtos__icone fas fa-shopping-cart"></i>
+                                        Add cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produtos__single">
+                        <a href="" class="produtos__link">
+                            <img src="../images/destaque4.png" alt="Produto 1" class="produtos__img">
+                        </a>
+                        <div class="produtos__bottom">
+                            <h3 class="produtos__nome">
+                                <a href="" class="produtos__link">Cuffed Beanie</a>
+                            </h3>
+                            <p class="produtos__valor">$10.00</p>
+                            <div class="linha"></div>
+                            <div class="produtos__box">
+                                <div class="produtos__info">
+                                    <p class="produtos__texto">
+                                        <i class="produtos__icone far fa-thumbs-up"></i>
+                                        1250
+                                    </p>
+                                    <p class="produtos__texto">
+                                        <i class="produtos__icone fas fa-tags"></i>
+                                        100
+                                    </p>
+                                </div>
+                                <div class="produtos__cart">
+                                    <button class="produtos__button">
+                                        <i class="produtos__icone fas fa-shopping-cart"></i>
+                                        Add cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produtos__single">
+                        <a href="" class="produtos__link">
+                            <img src="../images/destaque5.png" alt="Produto 1" class="produtos__img">
+                        </a>
+                        <div class="produtos__bottom">
+                            <h3 class="produtos__nome">
+                                <a href="" class="produtos__link">Cuffed Beanie</a>
+                            </h3>
+                            <p class="produtos__valor">$10.00</p>
+                            <div class="linha"></div>
+                            <div class="produtos__box">
+                                <div class="produtos__info">
+                                    <p class="produtos__texto">
+                                        <i class="produtos__icone far fa-thumbs-up"></i>
+                                        1250
+                                    </p>
+                                    <p class="produtos__texto">
+                                        <i class="produtos__icone fas fa-tags"></i>
+                                        100
+                                    </p>
+                                </div>
+                                <div class="produtos__cart">
+                                    <button class="produtos__button">
+                                        <i class="produtos__icone fas fa-shopping-cart"></i>
+                                        Add cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produtos__single">
+                        <a href="" class="produtos__link">
+                            <img src="../images/destaque6.png" alt="Produto 1" class="produtos__img">
+                        </a>
+                        <div class="produtos__bottom">
+                            <h3 class="produtos__nome">
+                                <a href="" class="produtos__link">Cuffed Beanie</a>
+                            </h3>
+                            <p class="produtos__valor">$10.00</p>
+                            <div class="linha"></div>
+                            <div class="produtos__box">
+                                <div class="produtos__info">
+                                    <p class="produtos__texto">
+                                        <i class="produtos__icone far fa-thumbs-up"></i>
+                                        1250
+                                    </p>
+                                    <p class="produtos__texto">
+                                        <i class="produtos__icone fas fa-tags"></i>
+                                        100
+                                    </p>
+                                </div>
+                                <div class="produtos__cart">
+                                    <button class="produtos__button">
+                                        <i class="produtos__icone fas fa-shopping-cart"></i>
+                                        Add cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="noticias">
+            <div class="center">
+                <div class="noticias__box">
+                    <h2 class="noticias__titulo">
+                        <span>Subscribe</span>
+                        Now
+                    </h2>
+                    <p class="noticias__descricao">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+
+                    <form action="" class="noticias__form">
+                        <input type="email" class="noticias__input required" placeholder="Informe seu E-mail">
+                        <button class="noticias__submit" type="submit">
+                            Inscreva-se
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__instagram">
+            <div class="instagram">
+                <div class="instagram__botao">
+                    <a href="" class="instagram__link">
+                        <i class="instagram__icone fab fa-instagram"></i>
+                        Instagram Feed
+                    </a>
+                </div>
+                <div class="instagram__wraper">
+                    <div class="instagram__group">
+                        <img src="../images/instagram1.png" alt="Instagram 1" class="instagram__img">
+                    </div>
+                    <div class="instagram__group">
+                        <img src="../images/instagram2.png" alt="Instagram 2" class="instagram__img">
+                    </div>
+                    <div class="instagram__group">
+                        <img src="../images/instagram3.png" alt="Instagram 3" class="instagram__img">
+                    </div>
+                    <div class="instagram__group">
+                        <img src="../images/instagram4.png" alt="Instagram 4" class="instagram__img">
+                    </div>
+                    <div class="instagram__group">
+                        <img src="../images/instagram5.png" alt="Instagram 5" class="instagram__img">
+                    </div>
+                    <div class="instagram__group">
+                        <img src="../images/instagram6.png" alt="Instagram 6" class="instagram__img">
+                    </div>
+                    <div class="instagram__group">
+                        <img src="../images/instagram7.png" alt="Instagram 7" class="instagram__img">
+                    </div>
+                    <div class="instagram__group">
+                        <img src="../images/instagram8.png" alt="Instagram 8" class="instagram__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__categorias">
+            <div class="center">
+                <div class="categorias">
+                    <div class="categorias__single">
+                        <h3 class="categorias__titulo">
+                            Women
+                        </h3>
+                        <ul class="categorias__lista">
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Dresses</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Blouses</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Swimwear</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Sharee</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="categorias__single">
+                        <h3 class="categorias__titulo">
+                            Men
+                        </h3>
+                        <ul class="categorias__lista">
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Accessories</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">T-Shirts</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Jumpers</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Jackets</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="categorias__single">
+                        <h3 class="categorias__titulo">
+                            Kids
+                        </h3>
+                        <ul class="categorias__lista">
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Shoes</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Acessories</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Blouses</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Shirts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="categorias__single">
+                        <h3 class="categorias__titulo">
+                            Toys
+                        </h3>
+                        <ul class="categorias__lista">
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Plush</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Teddy</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Cuddly toy</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Kids to</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="categorias__single">
+                        <h3 class="categorias__titulo">
+                            Furniture
+                        </h3>
+                        <ul class="categorias__lista">
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Bed</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Chair</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Table</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Dining Table</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="categorias__single">
+                        <h3 class="categorias__titulo">
+                            Jewelry
+                        </h3>
+                        <ul class="categorias__lista">
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Goldmine</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Weeding Ring</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Birthday Gift</a>
+                            </li>
+                            <li class="categorias__item">
+                                <a href="" class="categorias__link">Nackless</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__informacoes">
+            <div class="center">
+                <div class="informacoes">
+                    <div class="informacoes__single">
+                        <div class="logo">
+                            <a href="home.html" class="logo__link">
+                                <img src="../images/logomarca.png" alt="Logomarca" class="logo__img">
+                            </a>
+                        </div>
+                        <ul class="informacoes__lista">
+                            <li class="informacoes__item">
+                                <p class="informacoes__texto">
+                                    <i class="informacoes__icone fa fa-map-marker"></i>
+                                    184 Main Rd E, St Albans
+                                    <span>
+                                        VIC 3021, Australia
+                                    </span> 
+                                </p>
+                            </li>
+                            <li class="informacoes__item">
+                                <p class="informacoes__texto">
+                                    <i class="informacoes__icone fa fa-envelope"></i> 
+                                    contact@company.com
+                                </p>
+                            </li>
+                            <li class="informacoes__item">
+                                <p class="informacoes__texto">
+                                    <i class="informacoes__icone fa fa-phone"></i> 
+                                    +001 2233 456
+                                </p>
+                            </li>
+                            <li class="informacoes__item">
+                                <div class="rede-sociais">
+                                    <ul class="rede-sociais__lista">
+                                        <li class="rede-sociais__item">
+                                            <a href="" class="rede-sociais__link">
+                                                <i class="rede-sociais__icone fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li class="rede-sociais__item">
+                                            <a href="" class="rede-sociais__link">
+                                                <i class="rede-sociais__icone fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="rede-sociais__item">
+                                            <a href="" class="rede-sociais__link">
+                                                <i class="rede-sociais__icone fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="rede-sociais__item">
+                                            <a href="" class="rede-sociais__link">
+                                                <i class="rede-sociais__icone fab fa-youtube"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="informacoes__single">
+                        <h3 class="informacoes__titulo">Information</h3>
+                        <ul class="informacoes__lista">
+                            <li class="informacoes__item">
+                                <a href="" class="informacoes__link">About Us</a>
+                            </li>
+                            <li class="informacoes__item">
+                                <a href="" class="informacoes__link">Contact Us</a>
+                            </li>
+                            <li class="informacoes__item">
+                                <a href="" class="informacoes__link">Terms & Conditions</a>
+                            </li>
+                            <li class="informacoes__item">
+                                <a href="" class="informacoes__link">Returns & Exchanges</a>
+                            </li>
+                            <li class="informacoes__item">
+                                <a href="" class="informacoes__link">Shipping & Delivery</a>
+                            </li>
+                            <li class="informacoes__item">
+                                <a href="" class="informacoes__link">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="informacoes__single">
+                        <h3 class="informacoes__titulo">Quick links</h3>
+                        <ul class="informacoes__lista">
+                            <li class="informacoes__item">
+                                <a href="" class="informacoes__link">Store Location</a>
+                            </li>
+                            <li class="informacoes__item">
+                                <a href="" class="informacoes__link">My Account</a>
+                            </li>
+                            <li class="informacoes__item">
+                                <a href="" class="informacoes__link">Orders Tracking</a>
+                            </li>
+                            <li class="informacoes__item">
+                                <a href="" class="informacoes__link">Size Guide</a>
+                            </li>
+                            <li class="informacoes__item">
+                                <a href="" class="informacoes__link">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="informacoes__single">
+                        <h3 class="informacoes__titulo">Payament</h3>
+                        <ul class="informacoes__lista">
+                            <li class="informacoes__item">
+                                <a href="" class="informacoes__link">Account</a>
+                            </li>
+                            <li class="informacoes__item">
+                                <a href="" class="informacoes__link">Free Shipping</a>
+                            </li>
+                            <li class="informacoes__item">
+                                <a href="" class="informacoes__link">Support 24/7</a>
+                            </li>
+                            <li class="informacoes__item">
+                                <a href="" class="informacoes__link">30 Days Product Returns</a>
+                            </li>
+                            <li class="informacoes__item">
+                                <a href="" class="informacoes__link">100% Payment Secure</a>
+                            </li>
+                            <li class="informacoes__item">
+                                <a href="" class="informacoes__link">Supported All Cards</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <div class="center">
+                <div class="copy">
+                    <div class="copy__wraper">
+                        <p class="copy__texto">
+                            Copyright © 2019 Sello all rights reserved. Powered by Designik
+                        </p>
+
+                        <nav class="menu-footer">
+                            <ul class="menu-footer__lista">
+                                <li class="menu-footer__item">
+                                    <a href="home.html" class="menu-footer__link">Home</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="home.html" class="menu-footer__link">Produtos</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="home.html" class="menu-footer__link">Blog</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="home.html" class="menu-footer__link">Contato</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script> -->
+<script src="scripts/slick.min.js"></script>
+<script src="scripts/jquery.mask.min.js"></script>
+<script src="scripts/minify/main.min.js"></script>
+
+<script>
+	//Chamando a função do JS
+	preloader.init();
+</script>
+
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+
+
+    }
+    document.getElementById("defaultOpen").click();
+</script>
